@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_systemprofiles"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorAccent"
+    tools:context="com.example.android.studentspaces.studymode">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_system_profiles"
+        tools:context="com.example.android.studentspaces.system_profiles">
+
+
+        <Switch
+            android:id="@+id/wifi_switch"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:textColor="@android:color/white"
+            tools:layout_editor_absoluteY="57dp"
+            tools:layout_editor_absoluteX="290dp"
+            android:layout_marginTop="61dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WIFI-SETTINGS:"
+            android:textSize="20sp"
+            android:textColor="#00BFA5"
+            android:layout_alignBottom="@+id/wifi_switch"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="39dp"
+            android:id="@+id/textView2" />
+
+        <Button
+            android:text="Turn On Social Media Blocking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/fab1_color"
+            android:id="@+id/socialBlock"
+            android:textColor="#fafafa"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/Ringer"
+            android:layout_alignEnd="@+id/silent" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ringer/Vibrate"
+            android:textColor="#00BFA5"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:ems="10"
+            android:id="@+id/textView"
+            android:layout_below="@+id/textView2"
+            android:layout_alignStart="@+id/Ringer"
+            android:layout_marginTop="33dp" />
+
+        <Button
+            android:id="@+id/Ringer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ringer"
+            android:backgroundTint="@color/fab1_color"
+            android:textColor="#fafafa"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginTop="14dp" />
+
+        <Button
+            android:id="@+id/vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate"
+            android:backgroundTint="@color/fab1_color"
+            android:textColor="#fafafa"
+            android:layout_alignBaseline="@+id/Ringer"
+            android:layout_alignBottom="@+id/Ringer"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/silent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silent"
+            android:backgroundTint="@color/fab1_color"
+            android:textColor="#fafafa"
+            android:layout_marginStart="21dp"
+            android:layout_alignBaseline="@+id/vibrate"
+            android:layout_alignBottom="@+id/vibrate"
+            android:layout_toEndOf="@+id/vibrate" />
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/feedback1"
+        android:id="@+id/UserSettingsFeedback"
+        app:backgroundTint="@color/fab1_color"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/studymode"
+        android:id="@+id/StudyMode"
+        app:backgroundTint="@color/fab1_color"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/UserSettingsNotesReminders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="220dp"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:src="@drawable/write"
+        android:visibility="invisible"
+        app:backgroundTint="@color/fab2_color"
+        app:pressedTranslationZ="12dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/UserSettings"
+            android:layout_width="50dp"
+            android:src="@drawable/usersetting1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

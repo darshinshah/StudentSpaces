@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notes__reminders"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorAccent"
+    tools:context="com.example.android.studentspaces.studymode">
+
+    <LinearLayout
+        android:id="@+id/activity_studymode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textColor="#fafafa"
+        android:orientation="vertical"
+        tools:context="com.example.android.studentspaces.studymode">
+
+        <Button
+            android:text="Time Lock Your Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fafafa"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/fab1_color"
+            android:id="@+id/timelock"
+            android:onClick="timelockfunction"/>
+
+        <Button
+            android:text="Play Some Soft Music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/fab1_color"
+            android:layout_marginTop="20dp"
+            android:textColor="#fafafa"
+            android:id="@+id/Sound" />
+
+        <Button
+            android:text="Browse Topics"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/fab1_color"
+            android:layout_height="wrap_content"
+            android:textColor="#fafafa"
+            android:layout_marginTop="20dp"
+            android:id="@+id/browse" />
+
+        <Button
+            android:text="Turn Off Music"
+            android:backgroundTint="@color/fab1_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fafafa"
+            android:id="@+id/soundoff"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:text="Settings"
+            android:backgroundTint="@color/fab1_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fafafa"
+            android:id="@+id/settings"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:layout_marginBottom="290dp"
+        android:src="@drawable/accpic"
+        android:id="@+id/UserAccount"
+        app:backgroundTint="@color/fab1_color"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+        />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/feedback1"
+        android:id="@+id/UserSettingsFeedback"
+        app:backgroundTint="@color/fab1_color"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/studymode"
+        android:id="@+id/StudyMode"
+        app:backgroundTint="@color/fab1_color"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/UserSettingsNotesReminders"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="220dp"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:src="@drawable/write"
+        android:visibility="invisible"
+        app:backgroundTint="@color/fab2_color"
+        app:pressedTranslationZ="12dp" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/UserSettings"
+                android:layout_width="50dp"
+                android:src="@drawable/usersetting1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

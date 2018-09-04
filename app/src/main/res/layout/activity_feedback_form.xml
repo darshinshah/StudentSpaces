@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.studentspaces.FeedbackForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context="com.iot.iot.MainActivity">
+
+        <TextView
+            android:id="@+id/q1TV"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Rate today's lecture"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupRateLecture"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/q1arbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Excellent" />
+
+            <RadioButton
+                android:id="@+id/q1brbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Good" />
+
+            <RadioButton
+                android:id="@+id/q1crbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q2TV"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:layout_height="35dp"
+            android:text="Was the faculty able to deliver the lecture properly ? "
+            android:textSize="24dp" />
+
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupRateFaculty"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/q2arbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Excellent" />
+
+            <RadioButton
+                android:id="@+id/q2brbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Good" />
+
+            <RadioButton
+                android:id="@+id/q2crbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Average" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/commentsET"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="Comments/Doubts"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_weight="0.32"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/submitbtn"
+            android:layout_width="match_parent"
+            android:layout_height="14sp"
+            android:layout_marginTop="19dp"
+            android:layout_weight="0.21"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</LinearLayout>

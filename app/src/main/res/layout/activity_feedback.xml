@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notes__reminders"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorAccent"
+    tools:context="com.example.android.studentspaces.studymode">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/activity_feedback"
+        tools:context="com.example.android.studentspaces.Feedback">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:context="com.iot.iot.MainActivity">
+
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:orientation="vertical"
+            tools:context="com.iot.iot.MainActivity">
+
+            <Button
+                android:text="Engineering Mathematics-IV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mathsbtn"
+                android:backgroundTint="@color/fab1_color"
+                android:textColor="#fafafa"
+                android:visibility="gone"/>
+
+            <Button
+                android:text="Microprocessor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mpbtn"
+                android:backgroundTint="@color/fab1_color"
+                android:textColor="#fafafa"
+            android:visibility="gone"/>
+
+            <Button
+                android:text="Computer Networks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cnbtn"
+                android:backgroundTint="@color/fab1_color"
+                android:textColor="#fafafa"
+                android:visibility="gone"/>
+
+            <Button
+                android:text="System Programming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spbtn"
+                android:backgroundTint="@color/fab1_color"
+                android:textColor="#fafafa"
+                android:visibility="gone"/>
+
+            <Button
+                android:text="Computer Organization and Architecture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/coabtn"
+                android:backgroundTint="@color/fab1_color"
+                android:textColor="#fafafa"
+                android:visibility="gone"/>
+
+            <Button
+                android:text="Implementation of Technology"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/iotbtn"
+                android:backgroundTint="@color/fab1_color"
+                android:textColor="#fafafa"
+                android:visibility="gone"/>
+
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nothingToDisplay"
+                android:textSize="24sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/UserSettings"
+            android:layout_width="50dp"
+            android:src="@drawable/usersetting1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/feedback1"
+        android:id="@+id/UserSettingsFeedback"
+        app:backgroundTint="@color/fab1_color"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/studymode"
+        android:id="@+id/StudyMode"
+        app:backgroundTint="@color/fab1_color"
+        app:pressedTranslationZ="12dp"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/UserSettingsNotesReminders"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="220dp"
+        android:layout_marginEnd="@dimen/fab_margin_right"
+        android:src="@drawable/write"
+        android:visibility="invisible"
+        app:backgroundTint="@color/fab2_color"
+        app:pressedTranslationZ="12dp" />
+</android.support.design.widget.CoordinatorLayout>
